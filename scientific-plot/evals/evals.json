@@ -1,0 +1,8 @@
+{
+  "skill_name": "scientific-plot",
+  "evals": [
+    {"id": 1, "prompt": "三组真实实验数据要比较均值和置信区间，应该选什么图？", "expected_output": "先确认数据和统计定义，再选择适合精确比较的编码，不臆造数值。", "files": []},
+    {"id": 2, "prompt": "这个热力图的颜色很花，帮我判断是否误导读者。", "expected_output": "检查变量性质、色带顺序、伪边界、色盲和灰度表现。", "files": []},
+    {"id": 3, "prompt": "请把真实数据的趋势和相关性设计成 FigureSpec，交给后续版面设计。", "expected_output": "输出 task、claim、data_facts、encodings、relations 和 unknowns。", "files": []}
+  ]
+}

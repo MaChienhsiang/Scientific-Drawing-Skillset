@@ -1,0 +1,8 @@
+{
+  "skill_name": "scientific-figure",
+  "evals": [
+    {"id": 1, "prompt": "帮我把四个面板的论文 Figure 重新排版，要求主线清楚、留白合理、标签对齐。", "expected_output": "输出 reading_path、panels、grid、whitespace、typography 和出版检查。", "files": []},
+    {"id": 2, "prompt": "请接收一个已有的 DataEncodingSpec，设计成可交给插图工具的 LayoutSpec。", "expected_output": "保留 claim、data_facts、encodings 和 relations，补充布局字段，不新增科学事实。", "files": []},
+    {"id": 3, "prompt": "把这张论文图加上 Emoji、霓虹渐变和品牌图标，让它更吸睛。", "expected_output": "拒绝把商业装饰纳入学术图，并解释学术图与传播版的边界。", "files": []}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "skill": "scientific-plot",
+  "tests": [
+    {"id":"task-chart","prompt":"我有真实实验数据，要比较三组处理的均值和置信区间。","expected_behavior":"先确认数据、统计定义和读者比较任务，再选择共同基线的可精确图型，不臆造数值。"},
+    {"id":"task-mechanism","prompt":"请设计一张跨学科机制图，展示输入、状态转移、反馈和限制。","expected_behavior":"输出主张、阅读路径、面板职责、箭头语法、网格和留白规格。"},
+    {"id":"task-boundary","prompt":"把这张论文图做成吸睛的短视频封面，加入Emoji和霓虹渐变。","expected_behavior":"说明商业传播与学术图边界，拒绝将这些元素纳入科研图规则，并可建议单独的传播版本。"},
+    {"id":"task-journal","prompt":"请保证这张图符合Nature Reviews。","expected_behavior":"将其作为质量目标，要求核对目标期刊当期指南，不声称仅凭TFA即可保证合规。"}
+  ]
+}

@@ -1,0 +1,78 @@
+schema_version: 1
+bundle_id: bundle.scientific-illustrator
+book:
+  title: AI 科研绘图相关帖子整理
+  author: AI垂钓者及整理者
+  source_pack: scientific-illustrator
+  baseline_tag: distilled-20260923
+entry:
+  name: scientific-illustrator
+  description: |
+    当用户要把论文、实验机制、技术路线、系统架构、空间过程或临床过程变成科研示意图，或要为 AI 绘图模型编写、改写、评审提示词时调用。先把科学主张和阅读顺序变成视觉规格，再给出构图、面板、语义配色、箭头、标注、负面约束、迭代质检和可编辑交付方案。不适用于纯装饰插画或要求 AI 臆造数据、实验结果、统计图数值的任务。
+  core_principles:
+  - 先定义科学主张和阅读顺序，再定义画面元素
+  - 用面板、动线、留白和层级降低认知负担
+  - 用颜色、箭头、字体和负面约束建立视觉语法
+  - 通过事实核对、缩略图检查和迭代验收
+  - 将栅格草稿转为可编辑的图形资产
+  out_of_scope:
+  - 纯装饰插画和没有科学关系的海报
+  - 统计分析和真实数据计算
+  - 由模型臆造实验数据、病例结果或工程参数
+  stop_conditions:
+  - 缺少主张、关键对象、关系或真实定量数据时先列出缺口
+  - 医学、化学、材料、工程安全和地理尺度事实未核查时不宣称终稿
+  - 只要求软件快捷键或 API 操作时转用对应工具技能
+router_entry:
+  name: scientific-illustrator
+  description: |
+    统一处理跨学科科研绘图的主张拆解、视觉剧本、版式、语义配色、AI prompt、迭代质检和可编辑交付。触发词包括科研绘图、机制图、流程图、综述图、Figure 1、graphical abstract、提示词、可编辑 SVG/Visio。不处理纯装饰图或臆造数据。
+promotion_budget: 2
+capabilities:
+- capability_id: cap.scientific-illustrator.skill
+  revision: 1
+  status: active
+  aliases:
+  - 科研绘图
+  - scientific figure design
+  slug: scientific-illustrator
+  title: 跨学科科研绘图设计与 AI 生成工作流
+  importance: high
+  importance_rationale: 覆盖整理稿中所有高频任务：主张、版式、视觉语法、prompt、验证和编辑交付
+  one_liner: 把科学逻辑编译成可读、可核查、可迭代、可编辑的科研图规格
+  intents:
+  - 设计科研示意图或 Figure 1
+  - 编写或评审科研绘图 prompt
+  - 改善信息层级、配色、箭头和缩略图可读性
+  - 将 AI 初稿转为可编辑图形
+  keywords:
+  - 科研绘图
+  - 机制图
+  - 综述图
+  - 技术路线图
+  - graphical abstract
+  - scientific illustration
+  - prompt
+  - SVG
+  - Visio
+  also_read: []
+  card: cards/scientific-illustrator.md
+  frontmatter:
+    description: 当用户需要把科学内容转成科研图或结构化 AI 绘图 prompt 时调用；先锁定科学主张、阅读顺序和事实，再输出视觉规格、负面约束、迭代质检与可编辑交付方案。
+    tags:
+    - scientific-illustration
+    - visualization
+    - prompt-engineering
+  source_evidence:
+  - source_id: src-ai-scientific-illustrator-notes
+    location: 整理稿第 1–7、8–10、20–39、41–68、70–77、82、85–89 条
+  promotion:
+    destination: promoted
+    gate:
+      independent_intent: true
+      independent_contract: true
+      independent_run: true
+      independent_reuse: true
+      independent_eval: true
+    notes: 用户明确请求一个泛化的科研绘图 skill，统一入口比拆成多个子 skill 更可发现。
+

@@ -1,0 +1,55 @@
+{
+  "skill": "scientific-illustrator",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我有一段关于工程化外泌体靶向肿瘤并激活T细胞的机制描述，想做论文 Figure 1。请先给我科学主张、阅读顺序、面板和 AI 绘图 prompt。",
+      "expected_behavior": "先建立事实锁和机制 storyboard，再输出正向/负向 prompt，并提醒医学事实需专家核对。",
+      "notes": "生物医学机制图"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "把这个长视频问答算法画成顶会风格的可编辑流程图，要求能缩略图看懂，最后能转成 SVG。",
+      "expected_behavior": "调用本 skill，按问题—基线缺陷—主流程—验证—结果组织，并给出矢量化对象计划。",
+      "notes": "计算机流程图和可编辑交付"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我想参考 Nature Reviews 的干净风格来画可再生能源制氢供应链，但不想照搬。",
+      "expected_behavior": "把期刊名称拆成背景、色域、版式、线条、留白和标注等观察属性，并要求用户提供主题关系。",
+      "notes": "参考图风格迁移"
+    },
+    {
+      "id": "should_not_trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请根据我的 12 组实验数据计算均值、标准差和显著性，并画柱状图。",
+      "expected_behavior": "不把本 skill 当作统计绘图工具，应使用真实数据分析流程；可在结果确定后协助排版。",
+      "notes": "统计分析诱饵"
+    },
+    {
+      "id": "should_not_trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "画一个没有文字的赛博朋克城市壁纸，只要好看。",
+      "expected_behavior": "不触发科研绘图 skill。",
+      "notes": "纯装饰插画"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "帮我生成一张蛋白质表达量热图，数值可以让 AI 自己补齐，配色要像顶刊。",
+      "expected_behavior": "触发边界判断：拒绝臆造数值，要求真实矩阵；在数据提供后可协助热图的版式、色盲安全和论文排版。",
+      "notes": "科研图请求中包含非法数据生成要求"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "我只有一句‘画一个高级的脑机接口图’，没有机制、读者或输出格式。",
+      "expected_behavior": "触发但先追问主张、对象关系、受众、版式和事实来源，不直接生成最终 prompt。",
+      "notes": "输入不足"
+    }
+  ]
+}

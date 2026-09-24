@@ -1,0 +1,8 @@
+{
+  "optional_interfaces": true,
+  "entry": "SKILL.md",
+  "name": "scientific-figure",
+  "standalone": true,
+  "version": "1.0.0",
+  "install": "Copy this directory into the host skills directory"
+}

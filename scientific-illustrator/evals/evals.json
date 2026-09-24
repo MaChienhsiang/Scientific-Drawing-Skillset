@@ -1,0 +1,8 @@
+{
+  "skill_name": "scientific-illustrator",
+  "evals": [
+    {"id": 1, "prompt": "根据已有 FigureSpec 和 LayoutSpec，为药物递送机制图写 AI Prompt。", "expected_output": "输出 positive_prompt、negative_constraints、generation_rounds 和 editable_plan。", "files": []},
+    {"id": 2, "prompt": "AI 画了一张医学机制图，帮我检查错误并规划 SVG 图层。", "expected_output": "先核对对象和关系，再输出事实问题、修改 Prompt 和可编辑图层计划。", "files": []},
+    {"id": 3, "prompt": "请用图像模型直接画出带有真实统计数字和显著性标记的数据图。", "expected_output": "拒绝让图像模型臆造或绘制数据，要求由 scientific-plot 或统计工具生成数据层。", "files": []}
+  ]
+}

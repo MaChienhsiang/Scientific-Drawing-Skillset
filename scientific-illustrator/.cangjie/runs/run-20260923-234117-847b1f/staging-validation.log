@@ -1,0 +1,6 @@
+  skill: .staging-run-20260923-234117-847b1f-scientific-illustrator-compile   53 行    2682 字节
+
+共扫描 6 个 .md，其中 1 个 SKILL.md
+WARN  [name-dir] C:\Users\X\AppData\Local\Temp\.staging-run-20260923-234117-847b1f-scientific-illustrator-compile\SKILL.md: name `scientific-illustrator` 与目录名 `.staging-run-20260923-234117-847b1f-scientific-illustrator-compile` 不一致
+
+结果: 0 errors, 1 warnings
